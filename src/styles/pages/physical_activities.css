@@ -1,0 +1,103 @@
+.wrap {
+  min-height: auto;
+}
+.welcome-title {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column-reverse;
+}
+.welcome-title .display {
+  display: grid;
+  grid-template-rows: auto 1rem;
+}
+.welcome-title .display h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--purple-600);
+}
+.welcome-title .display p {
+  font-family: "Roboto Mono", sans-serif;
+  color: #717171;
+  font-size: 12px;
+}
+.welcome-title img {
+  width: 100%;
+  max-width: 250px;
+  align-items: center;
+}
+.row-chart {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 250px);
+  gap: 1rem;
+}
+.box-chart {
+  background: var(--white);
+  padding: 0.625rem;
+  border-radius: 8px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+
+  display: grid;
+  grid-template-rows: 1.25rem auto;
+  gap: 0.625rem;
+}
+.box-chart header h4 {
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #717171;
+}
+.box {
+  margin-top: 1rem;
+  background: var(--white);
+  padding: 0.625rem;
+  border-radius: 8px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+}
+.footer {
+  background: var(--white);
+  height: 5rem;
+  margin-top: 1rem;
+}
+.footer p {
+  text-align: center;
+  line-height: 5rem;
+}
+.pt-16 {
+  padding-top: 1rem;
+}
+.shadow {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+}
+.f-bold {
+  font-weight: bold;
+}
+@media (min-width: 992px) {
+  .welcome-title {
+    height: 250px;
+    flex-direction: row;
+  }
+}
+@media (min-width: 768px) {
+  .welcome-title .display h1 {
+    font-size: 2.5rem;
+  }
+  .welcome-title .display p {
+    font-size: 1rem;
+  }
+  .row-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .row-chart {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 250px;
+  }
+}

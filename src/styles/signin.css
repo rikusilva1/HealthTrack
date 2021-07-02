@@ -1,0 +1,22 @@
+.wrap {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wrap form {
+  background: var(--white);
+  width: 100%;
+  max-width: 375px;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+}
+.wrap form small:last-child button {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  border: none;
+  background: none;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sign In | Health Track</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- GLOBAL STYLES -->
+    <link rel="stylesheet" href="./src/styles/global.css" />
+    <!-- CSS STYLES -->
+    <link rel="stylesheet" href="./src/styles/signin.css" />
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <main>
+      <div class="container">
+        <div class="wrap">
+          <form action="">
+            <h1>Health Track</h1>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                aria-describedby="email"
+                placeholder="seuemail@email.com.br"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >Nunca compartilharemos seu e-mail com ninguém.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="password">Sua senha</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Senha"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+            <small class="form-text text-muted"
+              >Não tem uma conta?
+              <button type="button" data-toggle="modal" data-target="#signup">
+                Clique aqui
+              </button></small
+            >
+          </form>
+        </div>
+      </div>
+
+      <!-- Modal Sign Up -->
+      <div
+        class="modal fade"
+        id="signup"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="signup"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signup">Cadastro</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="name">Nome completo</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="name"
+                    aria-describedby="name"
+                    placeholder="Nome completo"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="dt-nasc">Data de nascimento</label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="dt-nasc"
+                    placeholder="DD/MM/AAAA"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="gender">Gênero</label>
+                  <select class="form-control" id="gender">
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Prefiro não dizer</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="height">Altura cm*</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="height"
+                    placeholder="EX.: 180"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="u_email">E-mail</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="u_email"
+                    placeholder="seuemail@email.com"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="confirm_password">Confirmar senha</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="confirm_password"
+                    placeholder="Confirmar senha"
+                  />
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Cancelar
+                </button>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

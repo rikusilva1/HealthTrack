@@ -1,0 +1,8 @@
+{
+  "name": "health_track",
+  "version": "1.0.0",
+  "description": "Projeto FIAP - Health Track",
+  "main": "index.js",
+  "author": "Henrique Lima",
+  "license": "MIT"
+}
